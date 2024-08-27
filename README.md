@@ -67,7 +67,7 @@ chatbot/
     => [python_app 5/5] COPY . .
     => [python_app] exporting to image
     => => exporting layers
-    => => writing image sha256:43fc701e7edaec220bfcfa0e0b3db7e3a7a2910a263fd72e3cf35df8fc2c3a15
+    => => writing image sha256:43fc70111edaec220b11fa0e0b3db7e3a7a2910a263fd11e3cf35df8aaac3a15
     => => naming to docker.io/library/chatbot-python_app
     => [python_app] resolving provenance for metadata file
     ```
