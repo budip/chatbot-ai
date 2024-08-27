@@ -1,0 +1,10 @@
+services:
+  python_app:
+    container_name: chatbot
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    command: tail -f /dev/null
