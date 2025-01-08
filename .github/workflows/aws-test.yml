@@ -1,4 +1,4 @@
-name: AWS Credential Test - with pip
+name: AWS Credential Test
 
 on:
   push:
@@ -17,16 +17,6 @@ jobs:
       run: |
         python3 -m pip install --upgrade pip
         pip install awscli
-
-    - name: Configure AWS Credentials
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: us-east-1
-      run: |
-        aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
-        aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
-        aws configure set region $AWS_REGION
 
     - name: List S3 Buckets
       env:
