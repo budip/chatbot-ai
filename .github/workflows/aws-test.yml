@@ -1,4 +1,4 @@
-name: AWS Credential Test
+name: AWS Credential Test 2
 
 on:
   push:
